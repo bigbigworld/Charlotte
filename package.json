@@ -1,0 +1,46 @@
+{
+  "name": "Charlotte",
+  "version": "1.0.0",
+  "description": "Charlotte's Web.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "cheerio": "^0.18.0",
+    "fs": "0.0.2",
+    "mkdirp": "^0.5.0",
+    "request": "^2.51.0",
+    "colors": "^1.1.2"
+  },
+  "devDependencies": {
+    "cheerio": "^0.18.0",
+    "colors": "^1.1.2",
+    "fs": "0.0.2",
+    "mkdirp": "^0.5.0",
+    "request": "^2.51.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "spider",
+    "nodejs",
+    "Charlotte",
+    "Charlotte's Web"
+  ],
+  "author": "Elliot",
+  "license": "ISC",
+  "appConifg": {
+    "downloader": {
+        "saveDir": "./download/shengnv/"
+    },
+    "spider": {
+        "requestMax" : 0,
+        "pageSelector" : "a[href]",
+        "imageSelector" : "img[src]",
+        "hostWhiteList":["lofter.com"],
+        "hostBlackList":["apple.com"]
+    }
+  }
+}
