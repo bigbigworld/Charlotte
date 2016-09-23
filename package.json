@@ -21,7 +21,8 @@
     "request": "^2.51.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start":"node app"
   },
   "keywords": [
     "spider",
@@ -39,8 +40,8 @@
         "requestMax" : 0,
         "pageSelector" : "a[href]",
         "imageSelector" : "img[src]",
-        "hostWhiteList":["lofter.com"],
-        "hostBlackList":["apple.com"]
+        "hostWhiteList":[],
+        "hostBlackList":[]
     }
   }
 }
